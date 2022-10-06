@@ -1,4 +1,11 @@
-# Nomensa WordPress Docker project
+# WORDSTRAP
+## Export post content from Strapi CMS to an XML format for WordPress Importer
+
+Found in tools, WordPRess Importer needs to be installed before you can import the XMl file.
+
+You will need to alter the code to fit your needs, it should give you a solid foundation in exporting content and you might even be able to go one step further and allocate content to specific WordPress blocks insead of just the `shortcode` block. 
+
+Have fun! Pull requests welcome, I like to learn from others - theres a :100: chance this could be written better.
 
 ![A mystical gif of Nicholas Cage](https://media1.giphy.com/media/glvyCVWYJ21fq/giphy.gif)
 
