@@ -1,0 +1,74 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# composer vendor ignore
+# 
+# Themes like the _underscore theme use composer for additional PHP power
+/vendor/
+/app/wp-content/themes/*/vendor
+
+# node_modules
+# 
+# Some themes container node modules as dependencies - we don't want that node modules folder up in our repos grill
+/app/wp-content/themes/*/node_modules
+node_modules
+
+*.xml
+php.ini
+uploads.ini
+wordpresstest.*
+
+# Stupid .DS_Store
+.DS_Store
+
+# Ignore the local .env file
+.env
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/app/wp-admin/
+/app/wp-content/index.php
+/app/wp-content/languages
+/app/wp-content/plugins/index.php
+/app/wp-content/themes/index.php
+/app/wp-includes/
+/app/index.php
+/app/license.txt
+/app/readme.html
+# /app/wp-*.php
+/app/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/app/wp-content/themes/twenty*/
+
+# Example plugin
+/app/wp-content/plugins/hello.php
+
+# Uploads
+/app/wp-content/uploads/
+
+# Upgrade
+/app/wp-content/upgrade/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+# /app/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+# /wp-content/themes
