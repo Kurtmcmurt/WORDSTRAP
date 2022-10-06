@@ -7,6 +7,28 @@ You will need to alter the code to fit your needs, it should give you a solid fo
 
 Have fun! Pull requests welcome, I like to learn from others - theres a :100: chance this could be written better.
 
+Env variable needed for API URI
+```
+Environment variables
+API_URL=<enter something here>
+# WORDPRESS CREDS
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_HOST=db
+WORDPRESS_DB_USER=wordpress
+WORDPRESS_DB_PASSWORD=wordpress
+# DB CREDS
+MYSQL_ROOT_PASSWORD=wordpress
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wordpress
+MYSQL_PASSWORD=wordpress
+# WORDPRESS CONFIG INFORMATION PER ENVIRONMENT - IMPORTANT FOR DEVOPS AS THIS IS THE DOMAIN WHICH IS SET IN THE DB ON WP INSTALL INIT
+# WP_HOME_URL=http://example.com
+# WP_SITEURL=http://example.com
+```
+
+# WordPress Docker Docs
+## And other (hopefully) useful information
+
 ![A mystical gif of Nicholas Cage](https://media1.giphy.com/media/glvyCVWYJ21fq/giphy.gif)
 
 This project was made with the intention of easing both developers and devops engineers lives. This is only a concept, it will need to be discussed with the wider team and will *likely* require some changes before utilising.
